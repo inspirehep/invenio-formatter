@@ -33,8 +33,6 @@ def get_format_by_code(code):
     :return: Format object with given ID. None if not found
     """
     f_code = code
-    if len(code) > 6:
-        f_code = code[:6]
     return registry.output_formats.get(f_code.lower(), {})
 
 
